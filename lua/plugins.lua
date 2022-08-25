@@ -14,6 +14,7 @@ packer.startup(function(use)
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
   use {'kyazdani42/nvim-web-devicons' }
+  use { 'glepnir/lspsaga.nvim' } -- LSP UIs
   use 'L3MON4D3/LuaSnip'
   use {
     'nvim-lualine/lualine.nvim' -- Statusline
@@ -40,7 +41,8 @@ packer.startup(function(use)
   use { 'nvim-lua/plenary.nvim' }    -- Common utilities
   use { 'nvim-telescope/telescope.nvim' }          --  highly extendable fuzzy finder over lists
   use { 'nvim-telescope/telescope-file-browser.nvim' }
-
+  use { 'akinsho/bufferline.nvim'}
+  use { 'norcalli/nvim-colorizer.lua'}
 end)
 
 

@@ -29,6 +29,9 @@ packer.startup(function(use)
     'neovim/nvim-lspconfig' -- LSP plugin
   }
 
+  use('jose-elias-alvarez/null-ls.nvim')  -- anguage server to inject LSP diagnostics, code actions, and more via Lua.
+  use('MunifTanjim/prettier.nvim')  -- Prettier plugin for Neovim's built-in LSP client.
+
   use {
     'nvim-treesitter/nvim-treesitter', --treesitter is language parser tool
     run = ':TSUpdate'
@@ -43,6 +46,6 @@ packer.startup(function(use)
   use { 'nvim-telescope/telescope-file-browser.nvim' }
   use { 'akinsho/bufferline.nvim'}
   use { 'norcalli/nvim-colorizer.lua'}
+  use { 'lewis6991/gitsigns.nvim' }
+  use { 'dinhhuy258/git.nvim' }
 end)
-
-

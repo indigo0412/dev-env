@@ -46,3 +46,4 @@ nvim_lsp.gopls.setup{
   cmd = { "gopls" },
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
 }
+
